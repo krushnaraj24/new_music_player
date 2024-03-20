@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* ------------------- index.html ------------------  */
+#indexpage{
+    background: linear-gradient(to right,yellow,purple);
+    text-align: center;
+}
+#indexh1{
+    color: lavender;
+    padding: 20%;
+    font-size: 80px;
+}
+
+#top{
+    display: flex;
+    justify-content: end;
+    padding: 15px;
+}
+#s{
+    height: 30px;
+    width: 100px;
+    padding-left: 10px;
+}
+
+#l{
+    height: 30px;
+    width: 100px;
+    padding-right: 10px;
+}
+
+#l:hover,#s:hover{
+    transform: scale(1.5);
+}
+
+#indexA{
+    text-decoration:none;
+    color: black;
+}
+#indexh1:hover{
+    color: black;
+    animation: changeColor 1s 0.1s infinite;
+}
+
+@keyframes changeColor {
+    0%{color: lavender;}
+    50%{color: black;}
+    100%{color: lavender;}
+}
+
+/* ------------------- login.html ------------------  */
+#loginbody{
+    background: linear-gradient(to right,white,black);
+    text-align: center;
+}
+
+#loginform{
+    height: 320px;
+    width: 600px;
+    margin: auto;
+    margin-top: 15%;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px 7px grey;
+    background: black;
+    color: white
+}
+
+form{
+    padding-top: 25px;
+}
+label{
+    font-size: xx-large;
+}
+
+input[type="text"],input[type="password"]{
+    padding: 10px;
+    width: 400px;
+    margin-top: 10px;
+    border: 0;
+}
+
+#loginsubmit{
+    height: 25px;
+    width: 75px;
+    border: 0;
+    background: purple;
+    color: white;
+    margin-top: 10px;
+}
+
+#loginsubmit:hover{
+    transform: scale(1.5);
+    color: purple;
+    background: white;
+    border-radius: 50px;
+}
+
+#loginres{
+    color:red;
+}
+
+/* ------------------- signup.html ------------------  */
+#signupbody{
+    background: linear-gradient(to right,white,black);
+    text-align: center;
+}
+
+#signupform{
+    height: 480px;
+    width: 600px;
+    margin: auto;
+    margin-top: 10%;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px 7px grey;
+    background: black;
+    color: white
+}
+
+form{
+    padding-top: 25px;
+}
+label{
+    font-size: xx-large;
+}
+
+input[type="text"],input[type="password"]{
+    padding: 10px;
+    width: 400px;
+    margin-top: 10px;
+    border: 0;
+}
+
+#signupsubmit{
+    height: 25px;
+    width: 75px;
+    border: 0;
+    background: purple;
+    color: white;
+    margin-top: 10px;
+}
+
+#signupsubmit:hover{
+    transform: scale(1.5);
+    color: purple;
+    background: white;
+    border-radius: 50px;
+}
+
+#signupres{
+    color:red;
+}
+
+/* ------------------- home.html ------------------  */
+#homepage{
+    background: url("./bg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+#homediv1{
+    margin-top: 50px;
+    background: linear-gradient(to left,yellow,purple);
+    font-size: 30px;
+}
+
+#homediv1:hover #name{
+    transition: color 0s ease;
+    animation: changeName 2s 0.1s infinite;
+}
+
+@keyframes changeName {
+    0%{color: black;}
+    50%{color: aqua;}
+    100%{color: white;}
+}
+
+#homeh2{
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+#homediv2{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+#homeimg{
+    height: 300px;
+    width: 350px;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px 7px grey;
+}
+
+#homeimg:hover{
+    transform: scale(1.2);
+}
+
+/* ------------------- home.html ------------------  */
+#arlist1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+#arlist1 button{
+    border: 0;
+}
+#arlist1 img{
+    height: 300px;
+    width: 350px;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 7px grey ;
+}
+
+#arlist1 img:hover{
+    transform: scale(1.3);
+}
